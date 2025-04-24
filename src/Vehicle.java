@@ -3,8 +3,9 @@ public class Vehicle {
     private String model;
     private String spz;
     private int year;
-    public void carInfo(){
-        System.out.println(brand+" "+model+" ("+year+") SPZ: "+spz);
+
+    public void displayInfo(){
+        System.out.println(getBrand()+" "+getModel()+" ("+getYear()+") SPZ: "+getSpz());
     }
 
     public String getBrand() {

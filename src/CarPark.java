@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 public class CarPark {
     ArrayList<Vehicle> cars = new ArrayList<>();
-    public void addCars(Vehicle vehicle) {
+    public void addVehicle(Vehicle vehicle) {
         if (vehicle != null) {
             this.cars.add(vehicle);
         }
     }
-    public void allVehicles() {
+    public void displayAllVehicles() {
         if (!this.cars.isEmpty()) {
             System.out.println("Vehicles in garage:");
             System.out.println("--------------------");
             for (Vehicle v : this.cars){
-                v.carInfo();
+                v.displayInfo();
             }
             System.out.println("--------------------");
         }
