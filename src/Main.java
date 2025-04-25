@@ -13,6 +13,9 @@ public class Main {
             mujPark.addVehicle(vehicleInstance4);
             mujPark.addVehicle(vehicleInstance5);
             mujPark.addVehicle(vehicleInstance6);
+            mujPark.performMaintenanceOnVehicle("HAJ LOUN");
+            mujPark.performMaintenanceOnVehicle("999 9999");
+
             mujPark.displayAllVehicles();
 
             String firstCarBrand = vehicleInstance1.getBrand();
@@ -20,5 +23,7 @@ public class Main {
             System.out.println(vehicleInstance1.getSpz());
             vehicleInstance1.setSpz("8AH 8888");
             System.out.println(vehicleInstance1.getSpz());
+
+            mujPark.displayVehiclesNeedingMaintenance(6);
     }
 }
