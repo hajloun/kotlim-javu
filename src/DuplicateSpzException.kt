@@ -1,0 +1,1 @@
+class DuplicateSpzException(message: String?) : Exception(message)
